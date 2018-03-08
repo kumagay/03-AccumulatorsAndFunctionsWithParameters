@@ -54,6 +54,7 @@ def main():
     print('---------------------------------------------')
 
     hello_and_goodbye()
+    print(5, 8)
 
 
 def hello():

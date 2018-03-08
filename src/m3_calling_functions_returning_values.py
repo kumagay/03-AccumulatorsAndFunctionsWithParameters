@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Yuhi Kumagai.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m3t_tester
 
@@ -73,7 +73,6 @@ def run_test_sum_of_digits():
     # Below this comment, add 3 more test cases of your own choosing.
     # ------------------------------------------------------------------
 
-
 def sum_of_digits(number):
     """
     What comes in:  An integer.
@@ -135,6 +134,11 @@ def run_test_digits_in_cube():
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
 
+    #Test 2:
+    expected = 9
+    answer = digits_in_cube(6)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
 
 def digits_in_cube(n):
     """
@@ -156,6 +160,8 @@ def digits_in_cube(n):
     ####################################################################
     # ------------------------------------------------------------------
 
+    return sum_of_digits(n ** 3)
+
 
 def run_test_digits_in_power():
     """ Tests the   digits_in_power   function. """
@@ -170,6 +176,11 @@ def run_test_digits_in_power():
     print('--------------------------------------------------')
     print('Testing the   digits_in_power   function:')
     print('--------------------------------------------------')
+    # Test 3:
+    expected = 13
+    answer = digits_in_power(16, 2)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
 
 
 def digits_in_power(n, k):
@@ -192,6 +203,7 @@ def digits_in_power(n, k):
     ####################################################################
     # ------------------------------------------------------------------
 
+    return sum_of_digits(n ** k)
 
 def run_test_fancy_sums_of_digits():
     """ Tests the   fancy_sums_of_digits   function. """
@@ -215,7 +227,11 @@ def run_test_fancy_sums_of_digits():
     # your 2nd and 3rd tests but READ THOSE TEST CASES CAREFULLY
     # in the doc-string to be sure that you understand the specification.
     # ------------------------------------------------------------------
-
+    # Test 4:
+    expected = 13
+    answer = fancy_sums_of_digits(16)
+    print('Test 4 expected:', expected)
+    print('       actual:  ', answer)
 
 def fancy_sums_of_digits(n):
     """
